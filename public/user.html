@@ -4,7 +4,8 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <!-- External StyleSheet -->
+    <link rel="stylesheet" href="css/index.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
@@ -13,7 +14,7 @@
 
   <body>
     <header>
-      <h1><img src="#">Little Amazone Customer Portal</h1>
+      <h1><img src="images/hooli.png">Little Amazone Customer Portal</h1>
     </header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
@@ -22,27 +23,48 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-            <a class="nav-link" href="#">Book List</a>
-            <a class="nav-link" href="#">Profile</a>
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link" href="books.html">Book List</a>
+            <a class="nav-link" href="user.html">Profile</a>
           </div>
         </div>
       </div>
-    </nav>
+      </nav>
+    
     <main>
-      <h2>Home Page</h2>
-      <img src="images/warehouse.jpg" height="300px">
-      <p>
-      Welcome to the Little Amazone customer system! Here, your workflow is streamlined so that you can improve the efficiency of your literary pursuits. 
-      With this AI-enabled platform, <q>"robots will be doing all of the boring work"</q> so that you can concentrate on what's fun. 
-      Cart checkouts greater than <strong>$100.00</strong> will receive free shipping! Terms and conditions apply. Wishing you the very 
-      best!
-      </p>
-      
-      <br />
-
-      <img src="#" height="200px">
+      <div class="container">
+        <div class="col-1">
+        </div>
+        <div class="col-10">
+          <h2 class="heading">User Page</h2>
+          <img src="images/stickfigure.jpg" id="imgcenter">
+          <p class="parcenter">Source: https://ih1.redbubble.net/image.297578530.7072/flat,750x,075,f-pad,750x1000,f8f8f8.u5.jpg</p>
+          <h3 class="parcenter">
+          Welcome to your user profile!
+          </h3>
+          <div class="container">
+            <div class="col-1">
+            </div>
+            <div class="col">
+              <h3>Name: Joe Schmoe</h3>
+              <h3>DOB: 22 July, 1993</h3>
+              <h3>Age: 33</h3>
+              <h3>Hometown: St. Louis, Missouri USA</h3>
+              <h3>Email Address: <a href="mailto:joeschmoe@hooli.edu">joeschmoe@hooli.edu</a></h3>
+            </div>
+          </div>
+          
+          <br />
+          
+        </div>
+        <div class="col-1">
+        </div>
+      </div>
     </main>
+    <footer>
+      <br />
+      <br />
+    </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
