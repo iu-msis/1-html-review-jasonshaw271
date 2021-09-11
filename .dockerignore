@@ -1,0 +1,6 @@
+# excludes only dot files
+.*
+# defines and runs multi-container Docker files
+docker-compose.yml
+# omits markdowns
+*.md
