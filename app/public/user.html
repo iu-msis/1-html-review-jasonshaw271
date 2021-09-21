@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <title>Little Amazone</title>
+    <script src="https://unpkg.com/vue@next"></script>
   </head>
 
   <body>
@@ -37,20 +38,24 @@
         </div>
         <div class="col-10">
           <h2 class="heading">User Page</h2>
-          <img src="images/stickfigure.jpg" id="imgcenter">
-          <p class="parcenter">Source: https://ih1.redbubble.net/image.297578530.7072/flat,750x,075,f-pad,750x1000,f8f8f8.u5.jpg</p>
-          <h3 class="parcenter">
-          Welcome to your user profile!
-          </h3>
+          
           <div class="container">
             <div class="col-1">
             </div>
-            <div class="col">
-              <h3>Name: Joe Schmoe</h3>
-              <h3>DOB: 22 July, 1993</h3>
-              <h3>Age: 33</h3>
-              <h3>Hometown: St. Louis, Missouri USA</h3>
-              <h3>Email Address: <a href="mailto:joeschmoe@hooli.edu">joeschmoe@hooli.edu</a></h3>
+
+            <div  id="offerApp" class="col">
+              <!-- vue image result -->
+              <img v-bind:src="person.picture.large" id="imgcenter">
+
+              <!-- vue data results-->
+              <h3 class="parCenter"> Welcome to your user profile! </h3>
+              <h3>Name: {{ person.name.first }} {{ person.name.last }}</h3>
+              <h3>DOB: {{person.dob.date[5]}}{{person.dob.date[6]}} / {{person.dob.date[8]}}{{person.dob.date[9]}} / {{person.dob.date[0]}}{{person.dob.date[1]}}{{person.dob.date[2]}}{{person.dob.date[3]}}</h3>
+              <h3>Age: {{ person.dob.age }}</h3>
+              <h3>Home Country: {{person.location.country}}</h3>
+              <h3>Email Address: <a v-bind:href="'mailto:'+person.email">{{person.email}}</a></h3>
+
+              
             </div>
           </div>
           
@@ -71,6 +76,10 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    
+    <!-- Randomuser.me scripting -->
+    <script src="js/index.js"></script>
+    <script>
+
+    </script>
   </body>
 </html>
