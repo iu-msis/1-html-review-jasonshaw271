@@ -6,6 +6,7 @@ const Offer = {
     },
 
     created() {
+        /* fetches api data from randomuser.me */
         fetch('https://randomuser.me/api/')
             .then(response => response.json())
             .then((parsedJson) => {
