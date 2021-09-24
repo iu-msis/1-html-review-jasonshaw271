@@ -54,7 +54,9 @@
               <h3>Age: {{ person.dob.age }}</h3>
               <h3>Home Country: {{person.location.country}}</h3>
               <h3>Email Address: <a v-bind:href="'mailto:'+person.email">{{person.email}}</a></h3>
-
+              <!-- refresh button linked to index.js -->
+              <form v-on:submit.prevent="fetchUserData">
+                <button type="submit" class="btn btn-primary">Reload</button>
               
             </div>
           </div>

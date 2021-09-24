@@ -5,8 +5,10 @@ const Offer = {
         }
     },
 
-    created() {
-        /* fetches api data from randomuser.me */
+    /* Added methods */
+    methods: {
+      /* fetches api data from randomuser.me */
+      fetchUserData() {
         fetch('https://randomuser.me/api/')
             .then(response => response.json())
             .then((parsedJson) => {
@@ -17,6 +19,10 @@ const Offer = {
             .catch( err => {
                 console.error(err)
             })
+          }
+    },
+    created() {
+      this.fetchUserData();
     }
   }
   
