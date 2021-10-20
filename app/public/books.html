@@ -52,53 +52,13 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>Harry Potter and the Philosopher's Stone</td>
-                <td>J. K. Rowling</td>
-                <td>1992</td>
-                <td>596</td>
-                <td>10.00</td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Harry Potter and the Chamber of Secrets</td>
-                <td>J. K. Rowling</td>
-                <td>1993</td>
-                <td>662</td>
-                <td>12.00</td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td>Harry Potter and the Prisoner of Azkaban</td>
-                <td>J. K. Rowling</td>
-                <td>1994</td>
-                <td>862</td>
-                <td>14.00</td>
-              </tr>
-              <tr>
-                <th scope="row">4</th>
-                <td>Harry Potter and the Goblet of Fire</td>
-                <td>J. K. Rowling</td>
-                <td>1996</td>
-                <td>1242</td>
-                <td>18.00</td>
-              </tr>
-              <tr>
-                <th scope="row">5</th>
-                <td>Harry Potter and the Order of the Phoenix</td>
-                <td>J. K. Rowling</td>
-                <td>1998</td>
-                <td>1672</td>
-                <td>20.00</td>
-              </tr>
-              <tr>
-                <th scope="row">6</th>
-                <td>Harry Potter and the Half Blood Prince</td>
-                <td>J. K. Rowling</td>
-                <td>1999</td>
-                <td>1576</td>
-                <td>20.00</td>
+              <tr v-for="offer in offers" scope = "row">
+                <td>{{books.id}}</td>
+                <td>{{books.title}}</td>
+                <td>{{books.author}}</td>
+                <td>{{books.publicationYear}}</td>
+                <td>{{books.totalPages}}</td>
+                <td>{{books.msrp}}</td>
               </tr>
             </tbody>
           </table>
