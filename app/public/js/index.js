@@ -10,7 +10,7 @@ const Offer = {
     methods: {
       /* fetches api data from randomuser.me */
       fetchUserData() {
-        fetch('/api/student/')
+        fetch('/api/book/')
             .then(response => response.json())
             .then((parsedJson) => {
                 console.log(parsedJson);
