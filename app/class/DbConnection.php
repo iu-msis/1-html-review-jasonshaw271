@@ -14,7 +14,7 @@ class DbConnection
       }
 
       try {
-          $dsn = 'mysql:host='.getenv('dbdatabase.cips6zyemp1i.us-east-2.rds.amazonaws.com').';dbname='.getenv('msisdb').';charset=utf8';
+          $dsn = 'mysql:host='.getenv('dbdatabase.cips6zyemp1i.us-east-2.rds.amazonaws.com').';dbname='.getenv('AWSDatabase').';charset=utf8';
           error_log($dsn);
           self::$connection = new PDO(
              $dsn,
