@@ -1,0 +1,4 @@
+MYSQL_DATABASE=msisdb
+MYSQL_HOST=dbdatabase.cips6zyemp1i.us-east-2.rds.amazonaws.com
+MYSQL_USER=MSIS_admin
+MYSQL_PASSWORD=Madog271
